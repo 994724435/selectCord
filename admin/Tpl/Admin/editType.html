@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+<title>Validation</title>
+<include file="./Public/conn/header.html" />
+        <div id="page-wrapper">
+        <div class="col-md-12 graphs">
+	   <div class="xs">
+  	    <h3>Validation</h3>
+  	    <div class="well1 white">
+        <form action="__URL__/editTypeDo" method='post' class="form-floating ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-url ng-valid-pattern" novalidate="novalidate" ng-submit="submit()">
+          <fieldset>
+            <div class="form-group">
+              <label class="control-label">编辑分类</label>
+              <input type="text" name="name" value="{$re['name']}" class="form-control1 ng-invalid ng-invalid-required ng-touched" ng-model="model.name" required="">
+            </div>
+            <input type="hidden" name='id' value="{$re['id']}">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-default">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="copy_layout">
+      <p>Copyright &copy; 2016  All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+   </div>
+   </div>
+      </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+<!-- Nav CSS -->
+<link href="__ROOT__/Public/admin/css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="__ROOT__/Public/admin/js/metisMenu.min.js"></script>
+<script src="__ROOT__/Public/admin/js/custom.js"></script>
+</body>
+</html>

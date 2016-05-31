@@ -1,0 +1,117 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>高考查询填报</title>
+    <style type="text/css">
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.box {
+    width: 100%;
+    height: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    background:  url("__ROOT__/Public/index/images/bg.png");
+}
+#dh {
+	width: 500px;
+	height: 35px;
+	margin: 0 auto;
+	margin-top: 10px;
+	float: right;
+}
+#dh ul{
+	width: 500px;
+	height: 35px;
+}
+ul {
+    list-style:none;
+}
+#dh ul li{
+	height: 35px;
+	float: left;
+	line-height: 35px;
+	text-align: center;
+}
+#dh ul li a{
+	display: block; font-size:20px; color: white;text-decoration: none;background-color:black;line-height: 35px;float: right;border-right-style: dashed;border-left-style:dashed; border-width: thin;border-color: white;
+}
+#dh ul li a:hover{
+	color:white;text-decoration: underline;
+}
+.logo{
+    width: 120px;
+    height: 149px;
+    margin-top: 3cm;
+    margin-left: 50px;
+    float: left;
+    background-color: white;
+}
+.title{
+    width:800px;
+    height: 149px;
+    margin-top: 3cm;
+    margin-left: 30px;
+    padding-left: 200px;
+    float: left;
+}
+.building{
+    width: 754px;
+    height: 392px;
+    margin-left: 50px;
+    background: url("__ROOT__/Public/index/images/gaokaojiayou.png");
+    clear: both;
+}
+.zhanghao{
+    width: 540px;
+    height: 314px;
+    margin-top: -314px;
+    float: right;
+}
+.denglu{
+    width: 216px;
+    height: 50px;
+    margin-left: 1020px;
+    margin-top: -89px;
+    background-color: yellow;
+}
+</style>
+    <style type="text/css">
+        table{border-collapse:collapse;border-spacing:0;border-left:1px solid #888;border-top:1px solid #888;color:black;}
+        th,td{border-right:1px solid #888;border-bottom:1px solid #888;padding:5px 15px;}
+        th{font-weight:bold;}         
+</style>
+</head>
+<body>
+<div class="box">
+     <div id="dh">
+     	 <ul>
+     	 	 <li><a href="__ROOT__/admin.php/Login/login">&nbsp管理员登陆&nbsp</a></li>
+     	 	  <li><a href="__ROOT__/index.php/Index/index">&nbsp首页&nbsp</a></li>
+     	 	 <li><a href="__ROOT__/index.php/Index/about">&nbsp关于我们&nbsp</a></li>
+     	 </ul>
+     </div>
+     <div class="logo"> 
+     <img src="__ROOT__/Public/index/images/1.png">
+     </div>
+     <div class="title">
+     <img src="__ROOT__/Public/index/images/write.png">
+     </div> 
+     <div>
+        <div class="building" style="border:1px solid red;"></div>     
+       <div style="float:right;margin-top:-390px;position:absolute;margin-left:850px;width:400px;color:white">
+       <image src="__ROOT__/Public/index/images/about.jpg" width="380px">  
+       <p style="text-indent:2em;">
+        我们不算最出众的，但肯定是中国一群与众不同的；因为我们共同追随着绝对与众不同的精神领袖——克劳士比大师。
+我们不算最聪明的，但肯定是一群信奉职业道德和固守零缺陷工作标准的专业人士；因为“第一次就把事情做对”是我们共同的信念，“诚信”是我们对质量的定义，“明志笃行、止于至善”是我们的信仰。
+如果你具有上述特质，就不要犹豫，过来加入我们的团队吧。 </p> 
+      
+     </div></div>
+    
+   
+  
+
+</body>
+</html>

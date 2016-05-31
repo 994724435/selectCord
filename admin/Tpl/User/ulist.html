@@ -1,0 +1,66 @@
+
+
+
+<include file="./Public/conn/header.html" />
+        
+        
+        
+        
+        <div id="page-wrapper">
+        <div class="graphs">
+     	
+    
+	  
+    <div class="content_bottom">
+     <div class="col-md-12 span_3">
+		  <div class="bs-example1" data-example-id="contextual-table">
+		    <table class="table">
+		      <thead>
+		        <tr>
+		          <th>编号</th>
+		          <th>用户名</th>
+		          <th>邮箱</th>
+		          <th>性别</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		      <?php 
+		      		$i = 1;
+		      	?>
+		      <foreach name="re" item='v'>
+		      
+		      	<?php 
+		      		if(($i%2)==1){
+						echo "<tr class='active'>";
+					}else{
+						echo "<tr class='info'>";
+					}
+		      	?>
+		        
+		          <th scope="row">{$v.id}</th>
+		          <td>{$v.name}</td>
+		          <td>{$v.email}</td>
+		          <td>{$v.sex}</td>
+		        </tr>
+		      	<?php $i++ ;?>
+		       </foreach>
+		        
+		        
+		      </tbody>
+		    </table>
+		   </div>
+	   </div>
+		<div class="clearfix"> </div>
+	    </div>
+		<div class="copy">
+            <p>Copyright &copy; 2015.Company name All rights reserved.</p>
+	    </div>
+		</div>
+       </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="__ROOT__/Public/admin/js/bootstrap.min.js"></script>
+</body>
+</html>
